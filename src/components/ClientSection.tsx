@@ -38,35 +38,8 @@ export default function ClientSection() {
           </h2>
           
           <p className="text-slate-500 text-sm md:text-lg leading-relaxed max-w-2xl mx-auto">
-            Ratusan UMKM di seluruh Indonesia telah mempercayai BAYARO POS untuk mengelola transaksi harian mereka. Bergabunglah dengan mereka!
+            Kami terus berkembang bersama UMKM Indonesia. Jadilah bagian dari ekosistem kami yang terus bertumbuh!
           </p>
-        </div>
-
-        {/* Stats Banner */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 md:mb-16 max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-2xl p-6 text-center">
-            <div className="flex items-center justify-center mb-2">
-              <TrendingUp className="h-6 w-6 text-indigo-600" />
-            </div>
-            <p className="text-3xl font-black text-slate-900 font-display">500+</p>
-            <p className="text-xs text-slate-500 font-semibold mt-1">UMKM Aktif</p>
-          </div>
-          
-          <div className="bg-gradient-to-br from-emerald-50 to-white border border-emerald-100 rounded-2xl p-6 text-center">
-            <div className="flex items-center justify-center mb-2">
-              <Briefcase className="h-6 w-6 text-emerald-600" />
-            </div>
-            <p className="text-3xl font-black text-slate-900 font-display">50K+</p>
-            <p className="text-xs text-slate-500 font-semibold mt-1">Transaksi/Hari</p>
-          </div>
-          
-          <div className="bg-gradient-to-br from-amber-50 to-white border border-amber-100 rounded-2xl p-6 text-center">
-            <div className="flex items-center justify-center mb-2">
-              <span className="text-2xl">⭐</span>
-            </div>
-            <p className="text-3xl font-black text-slate-900 font-display">4.9/5</p>
-            <p className="text-xs text-slate-500 font-semibold mt-1">Rating Kepuasan</p>
-          </div>
         </div>
 
         {/* Client Logos Grid */}
@@ -94,7 +67,7 @@ export default function ClientSection() {
           {/* Additional Client Count Badge */}
           <div className="mt-10 text-center">
             <p className="text-slate-400 text-xs md:text-sm font-medium">
-              Dan masih <strong className="text-indigo-600 font-bold">400+ UMKM lainnya</strong> yang telah mempercayai BAYARO POS untuk mengelola bisnis mereka.
+              Bergabunglah dengan <strong className="text-indigo-600 font-bold">klien kami yang terus bertambah</strong> untuk mengelola bisnis lebih efisien dengan BAYARO POS.
             </p>
           </div>
         </div>
