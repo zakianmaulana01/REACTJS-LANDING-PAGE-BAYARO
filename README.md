@@ -1,193 +1,287 @@
-# BAYARO POS - Landing Page
-
-![BAYARO POS Banner](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80)
-
 <div align="center">
 
-**BAYARO POS** adalah solusi sistem kasir modern dan laporan keuangan real-time yang didedikasikan untuk memberdayakan UMKM Indonesia menuju digitalisasi usaha yang mandiri, cerdas, dan efisien.
+<img src="assets/bayaro-logo-transparent.png" alt="BAYARO POS Logo" height="80" />
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://reactjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.1-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
-[![Vite](https://img.shields.io/badge/Vite-6.2-646CFF?logo=vite)](https://vitejs.dev/)
+# BAYARO POS — Landing Page
 
-**Harga Promo: Rp 150.000/bulan** 🎉
+**Landing page modern + simulator kasir interaktif untuk solusi POS UMKM Indonesia**
+
+[![React](https://img.shields.io/badge/React-19.0-61DAFB?logo=react&logoColor=white&style=flat-square)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org)
+[![Vite](https://img.shields.io/badge/Vite-6.2-646CFF?logo=vite&logoColor=white&style=flat-square)](https://vitejs.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1-38B2AC?logo=tailwind-css&logoColor=white&style=flat-square)](https://tailwindcss.com)
+[![Motion](https://img.shields.io/badge/Framer_Motion-12-FF0055?logo=framer&logoColor=white&style=flat-square)](https://motion.dev)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+
+**Harga Berlangganan: Rp 150.000 / bulan · Tanpa komisi · Tanpa kontrak mengikat**
 
 </div>
 
 ---
 
-## ✨ Fitur Utama
+## Tentang Project
 
-### 🖥️ Landing Page Interaktif
-- **Hero Section** - Headline menarik dengan CTA kuat
-- **Fitur Utama** - Penjelasan lengkap fitur BAYARO POS
-- **Simulator Kasir** - Demo interaktif untuk merasakan langsung sistem kasir
-- **Trust Section** - Testimoni dan kepercayaan
-- **Pricing** - Paket harga transparan
-- **Form Registrasi** - Pendaftaran langsung via WhatsApp
-- **FAQ** - Pertanyaan yang sering diajukan
+BAYARO POS adalah landing page produk lengkap untuk sistem kasir modern yang dirancang khusus untuk UMKM Indonesia. Project ini mencakup halaman pemasaran yang dibangun penuh dengan React + TypeScript, serta simulator kasir interaktif yang memungkinkan calon pelanggan mencoba langsung sistem sebelum berlangganan.
 
-### 🛒 Simulator POS Interaktif
-Demo lengkap sistem kasir dengan fitur:
-- Katalog menu lengkap (Coffee, Non-Coffee, Tea, Pastry, Main Course)
-- Pilihan customisasi (Ice/Hot, Sugar Level, Extra Shot, Syrup)
-- Keranjang belanja dengan hitung otomatis
-- Proses checkout dengan berbagai metode pembayaran
-- Riwayat transaksi
+### Mengapa BAYARO POS?
 
-### 🎨 Design Premium
-- Modern UI dengan Tailwind CSS 4
-- Smooth animations dengan Framer Motion
-- Responsive design (Mobile-first)
-- Dark/Light mode ready
-- Premium typography
+- **100% Offline** — Sistem kasir berjalan penuh tanpa koneksi internet
+- **Data Lokal & Aman** — Tidak ada data yang dikirim ke cloud atau pihak ketiga
+- **Auto-save & Backup** — Data tersimpan otomatis, bisa di-backup kapan saja
+- **Harga Flat** — Rp 150.000/bulan tanpa potongan komisi per transaksi
 
 ---
 
-## 🚀 Tech Stack
+## Tampilan Halaman
 
-| Teknologi | Purpose |
-|-----------|---------|
-| **React 19** | UI Framework |
-| **TypeScript** | Type Safety |
-| **Vite 6** | Build Tool & Dev Server |
-| **Tailwind CSS 4** | Styling |
-| **Framer Motion** | Animations |
-| **Lucide React** | Icons |
-| **Express.js** | Backend Server |
+| Bagian | Deskripsi |
+|--------|-----------|
+| **Header** | Sticky navbar dengan promo bar animasi, mobile hamburger menu |
+| **Hero** | Headline kuat + mock preview POS + CTA button langganan |
+| **Fitur Utama** | Grid 12 fitur produk dengan CTA section dark background |
+| **POS Simulator** | Demo kasir interaktif 4-tab (Kasir, Meja, Riwayat, Laporan) |
+| **Trust Section** | Jaminan keamanan data lokal + banner UMKM Indonesia |
+| **Pricing** | Satu paket Rp 150k/bulan, checklist fitur lengkap |
+| **Registrasi** | Form pendaftaran terintegrasi WhatsApp onboarding |
+| **FAQ** | 5 pertanyaan umum dengan accordion interaktif |
+| **Footer** | Kontak, navigasi cepat, social media, legal links |
 
 ---
 
-## 📦 Installation
+## Simulator Kasir Interaktif
 
-### Prerequisites
-- Node.js 18+
-- npm atau yarn
+Fitur utama project ini adalah simulator POS yang bisa dicoba langsung di browser:
 
-### Steps
+### Tab Kasir
+- Katalog menu lengkap: Coffee, Non-Coffee, Tea, Pastry, Main Course (13 item)
+- Pencarian menu real-time
+- Filter kategori
+- Kustomisasi item: suhu (Ice/Hot), tingkat gula, extra shot espresso, pilihan syrup
+- Keranjang belanja dengan qty adjuster
+- Input nama pelanggan & catatan item
+- Perhitungan otomatis: Subtotal + PPN 11% + Service Fee 5%
+- Hold pesanan & Bayar sekarang
 
-```bash
-# Clone repository
-git clone https://github.com/username/REACTJS-LANDING-PAGE-BAYARO.git
-cd REACTJS-LANDING-PAGE-BAYARO
+### Tab Meja
+- Visualisasi 9 meja dengan status: Kosong / Terisi / Billed
+- Buka meja baru dengan nama pelanggan
+- Pindah ke kasir dari meja yang aktif
 
-# Install dependencies
-npm install
+### Tab Riwayat
+- Daftar transaksi tersimpan (pre-populated + transaksi baru)
+- Detail struk per transaksi
+- Reset data demo
 
-# Run development server
-npm run dev
+### Tab Laporan (Real-Time)
+- Total omset, jumlah transaksi, rata-rata ticket
+- Metode pembayaran populer
+- Timeline omset penjualan (SVG chart custom)
+- Top produk terlaris
+- Breakdown per metode pembayaran (QRIS, Tunai, Debit, Kredit)
+- Semua update otomatis setelah setiap transaksi selesai
 
-# Build for production
-npm run build
+### Checkout
+- Pilih metode: QRIS, Tunai, Debit, Kredit
+- Input uang tunai + hitung kembalian otomatis
+- Struk digital setelah pembayaran
+- Auto redirect ke tab Laporan untuk lihat efek real-time
 
-# Preview production build
-npm run preview
+---
+
+## Tech Stack
+
+| Teknologi | Versi | Kegunaan |
+|-----------|-------|---------|
+| [React](https://react.dev) | 19.0 | UI Framework |
+| [TypeScript](https://www.typescriptlang.org) | 5.8 | Type safety |
+| [Vite](https://vitejs.dev) | 6.2 | Build tool & dev server |
+| [Tailwind CSS](https://tailwindcss.com) | 4.1 | Utility-first styling |
+| [Framer Motion](https://motion.dev) | 12 | Animasi & transisi |
+| [Lucide React](https://lucide.dev) | 0.546 | Ikon SVG |
+| [Express.js](https://expressjs.com) | 4.21 | Server backend (opsional) |
+| [dotenv](https://github.com/motdotla/dotenv) | 17 | Environment variables |
+
+**Font:** Inter (sans-serif) + JetBrains Mono (monospace) via Google Fonts  
+**Warna primer:** Indigo `#4f46e5` | Sekunder: Cyan `#06b6d4`
+
+---
+
+## Struktur Project
+
+```
+REACTJS-LANDING-PAGE-BAYARO/
+├── assets/
+│   └── bayaro-logo-transparent.png   # Logo produk
+├── src/
+│   ├── components/
+│   │   ├── Header.tsx           # Sticky navbar + promo bar + mobile menu
+│   │   ├── Hero.tsx             # Hero section + mock POS preview card
+│   │   ├── Features.tsx         # Grid 12 fitur + CTA section
+│   │   ├── PosSimulator.tsx     # Simulator kasir interaktif (1733 baris)
+│   │   ├── TrustSection.tsx     # Keamanan data + banner UMKM
+│   │   ├── Pricing.tsx          # Pricing card + feature checklist
+│   │   ├── RegistrationForm.tsx # Form daftar + integrasi WhatsApp
+│   │   ├── FAQ.tsx              # Accordion FAQ 5 pertanyaan
+│   │   └── Logo.tsx             # Komponen logo reusable
+│   ├── App.tsx                  # Root app + footer lengkap
+│   ├── data.ts                  # Data menu, transaksi, tipe TypeScript
+│   ├── main.tsx                 # Entry point React
+│   └── index.css                # Global styles + Tailwind theme tokens
+├── index.html                   # HTML template
+├── metadata.json                # Konfigurasi Google AI Studio
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
 ```
 
-### Environment Variables (Optional)
-Buat file `.env.local` di root folder:
+---
+
+## Instalasi & Menjalankan Lokal
+
+### Prasyarat
+
+Pastikan sudah terinstall di komputer Anda:
+
+- **Node.js** versi 18 ke atas — [Download Node.js](https://nodejs.org)
+- **npm** (otomatis ikut saat install Node.js)
+- Koneksi internet saat pertama kali install (untuk download dependencies)
+
+Cek versi Node.js yang terpasang:
+
+```bash
+node --version   # harus >= v18.0.0
+npm --version
+```
+
+---
+
+### Langkah 1 — Clone Repository
+
+```bash
+git clone https://github.com/zakianmaulana01/REACTJS-LANDING-PAGE-BAYARO.git
+cd REACTJS-LANDING-PAGE-BAYARO
+```
+
+---
+
+### Langkah 2 — Install Dependencies
+
+```bash
+npm install
+```
+
+Perintah ini akan mengunduh semua package yang dibutuhkan ke folder `node_modules/`. Proses ini memerlukan koneksi internet dan memakan waktu 1–2 menit tergantung kecepatan internet.
+
+---
+
+### Langkah 3 — Konfigurasi Environment (Opsional)
+
+Project ini memiliki integrasi dengan **Google Gemini AI** yang bersifat opsional. Jika ingin menggunakannya:
+
+1. Buat file `.env.local` di root folder project:
+
+```bash
+touch .env.local
+```
+
+2. Tambahkan API key Gemini Anda:
 
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
+> Jika tidak diset, semua fitur landing page dan simulator kasir tetap berjalan normal. API key hanya dibutuhkan untuk fitur AI tambahan.
+
 ---
 
-## 🧭 Project Structure
+### Langkah 4 — Jalankan Development Server
 
-```
-REACTJS-LANDING-PAGE-BAYARO/
-├── src/
-│   ├── components/          # React components
-│   │   ├── Header.tsx       # Navigation header
-│   │   ├── Hero.tsx         # Hero section
-│   │   ├── Features.tsx     # Features showcase
-│   │   ├── PosSimulator.tsx # Interactive POS demo
-│   │   ├── TrustSection.tsx # Testimonials & trust
-│   │   ├── Pricing.tsx      # Pricing plans
-│   │   ├── RegistrationForm.tsx # Registration form
-│   │   ├── FAQ.tsx          # FAQ accordion
-│   │   └── Logo.tsx         # Brand logo
-│   ├── App.tsx              # Main app component
-│   ├── data.ts              # Menu & transaction data
-│   ├── main.tsx             # Entry point
-│   └── index.css            # Global styles
-├── public/                  # Static assets
-├── index.html               # HTML template
-├── package.json             # Dependencies
-├── tsconfig.json            # TypeScript config
-├── vite.config.ts           # Vite config
-└── README.md                # Documentation
+```bash
+npm run dev
 ```
 
----
+Buka browser dan akses: **[http://localhost:3000](http://localhost:3000)**
 
-## 🎯 Available Scripts
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server (port 3000) |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build |
-| `npm run lint` | Run TypeScript type checking |
-| `npm run clean` | Clean build artifacts |
+Server berjalan dengan Hot Module Replacement (HMR) aktif — perubahan kode langsung terlihat di browser tanpa reload manual.
 
 ---
 
-## 📱 Responsive Breakpoints
+## Scripts yang Tersedia
 
-| Breakpoint | Screen Size |
-|------------|-------------|
-| Mobile | < 640px |
-| Tablet | 640px - 1024px |
-| Desktop | > 1024px |
-
----
-
-## 🌟 Screenshots
-
-### Hero Section
-Modern hero dengan headline menarik dan CTA button.
-
-### POS Simulator
-Demo interaktif sistem kasir dengan katalog menu lengkap.
-
-### Pricing
-Paket harga transparan dan mudah dipahami.
+| Command | Keterangan |
+|---------|-----------|
+| `npm run dev` | Jalankan development server di port 3000 |
+| `npm run build` | Build project untuk production (output ke folder `dist/`) |
+| `npm run preview` | Preview hasil build production secara lokal |
+| `npm run lint` | Cek type error TypeScript (tanpa emit file) |
+| `npm run clean` | Hapus folder `dist/` dan file `server.js` |
 
 ---
 
-## 🤝 Cara Berkontribusi
+## Build untuk Production
 
-1. Fork repository ini
-2. Buat branch baru (`git checkout -b feature/amazing-feature`)
-3. Commit perubahan (`git commit -m 'Add amazing feature'`)
-4. Push ke branch (`git push origin feature/amazing-feature`)
-5. Buat Pull Request
+```bash
+npm run build
+```
+
+Hasil build tersimpan di folder `dist/`. Folder ini berisi file statis (HTML, CSS, JS) yang siap di-deploy ke:
+
+- **Vercel** — `vercel deploy`
+- **Netlify** — drag & drop folder `dist/`
+- **GitHub Pages** — dengan GitHub Actions
+- **VPS / Shared Hosting** — upload isi `dist/` ke public_html
 
 ---
 
-## 📄 License
+## Troubleshooting
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+**Port 3000 sudah dipakai?**
+```bash
+# Jalankan di port lain
+npx vite --port 3001
+```
+
+**Node.js versi lama (< 18)?**
+```bash
+# Install Node.js versi terbaru via nvm
+nvm install 20
+nvm use 20
+```
+
+**Error saat `npm install`?**
+```bash
+# Hapus node_modules dan install ulang
+rm -rf node_modules package-lock.json
+npm install
+```
+
+**Gambar tidak muncul di simulator?**
+
+Gambar menu menggunakan URL dari Unsplash. Pastikan koneksi internet aktif saat pertama kali membuka halaman.
 
 ---
 
-## 📞 Kontak
+## Kontak & Informasi Produk
 
-- **Website:** [bayaropos.com](https://bayaropos.com)
-- **WhatsApp:** [+62 812-3456-7890](https://wa.me/6281234567890)
-- **Email:** hello@bayaropos.com
-- **Address:** Ruko Sentra Bisnis Blok B No. 9, Tebet, Jakarta Selatan
+| | |
+|--|--|
+| **Website** | [bayaropos.com](https://bayaropos.com) |
+| **WhatsApp** | [+62 812-3456-7890](https://wa.me/6281234567890) |
+| **Email** | hello@bayaropos.com |
+| **Alamat** | Ruko Sentra Bisnis Blok B No. 9, Tebet, Jakarta Selatan 12810 |
+
+---
+
+## Lisensi
+
+Project ini dirilis di bawah [MIT License](LICENSE).
 
 ---
 
 <div align="center">
 
-Made with ❤️ for Indonesian SMEs
+Dibuat dengan untuk UMKM Indonesia
 
-© 2024-2026 BAYARO POS. All rights reserved.
+© 2024–2026 BAYARO POS. All rights reserved.
 
 </div>
