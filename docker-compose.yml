@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  bayaro-landing:
+    build: .
+    container_name: bayaro-landing
+    ports:
+      # Map port VPS 3000 -> container port 80 (nginx)
+      - "3000:80"
+    restart: unless-stopped
+    # Environment variables (kalau butuh)
+    # environment:
+    #   - VITE_API_URL=https://api.bayaropos.com
