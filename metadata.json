@@ -1,0 +1,6 @@
+{
+  "name": "BAYARO POS",
+  "description": "Landing page modern dan simulator kasir interaktif untuk BAYARO POS, solusi kasir UMKM dengan laporan real-time seharga Rp 150.000 / bulan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
