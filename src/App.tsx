@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import PosSimulator from './components/PosSimulator';
 import TrustSection from './components/TrustSection';
+import ClientSection from './components/ClientSection';
 import Pricing from './components/Pricing';
 import FAQ from './components/FAQ';
 import RegistrationForm from './components/RegistrationForm';
@@ -51,6 +52,9 @@ export default function App() {
 
         {/* TRUST ACCREDITATION SECTION */}
         <TrustSection onScrollToSection={scrollToSection} />
+
+        {/* CLIENT SECTION */}
+        <ClientSection />
 
         {/* PRICING PLANS SECTION */}
         <Pricing onScrollToSection={scrollToSection} />
