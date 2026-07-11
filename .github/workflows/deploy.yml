@@ -61,7 +61,7 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            cd /home/ubuntu/bayaro-landing
+            cd /var/www/bayaro/REACTJS-LANDING-PAGE-BAYARO
             docker compose pull
             docker compose up -d --build
             docker image prune -f
