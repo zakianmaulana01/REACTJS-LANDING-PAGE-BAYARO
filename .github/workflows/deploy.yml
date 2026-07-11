@@ -62,6 +62,7 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
             cd /var/www/bayaro/REACTJS-LANDING-PAGE-BAYARO
-            docker compose pull
+            git pull origin main
+            docker compose down
             docker compose up -d --build
             docker image prune -f
