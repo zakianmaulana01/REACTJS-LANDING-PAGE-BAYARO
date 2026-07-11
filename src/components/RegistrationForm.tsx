@@ -65,7 +65,7 @@ export default function RegistrationForm() {
 
   // Helper to generate custom Whatsapp URL with filled-in fields
   const getWhatsappUrl = () => {
-    const adminPhone = '6281234567890'; // Mock admin number
+    const adminPhone = '6285174160310'; // Mock admin number
     const message = `Halo BAYARO POS! Saya ingin konfirmasi pendaftaran langganan Rp 150k/bulan.
 
 Berikut rincian pendaftaran saya:
@@ -83,15 +83,15 @@ Mohon bantuannya untuk setup akun kasir BAYARO POS saya. Terima kasih!`;
   return (
     <section id="registration" className="py-20 md:py-28 bg-slate-50 relative">
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl -z-10"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        
+
         {/* Left segment: Promo booking copy */}
         <div className="lg:col-span-6 space-y-6 md:space-y-8">
           <div className="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-800 border border-emerald-200 text-xs font-bold px-3 py-1 rounded-full">
             <ShieldCheck className="h-4 w-4" /> Slot Terjamin & Aman
           </div>
-          
+
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-black text-slate-900 leading-tight tracking-tight">
             Mulai Berlangganan Bayaro POS Rp 150k/Bulan!
           </h2>
@@ -108,7 +108,7 @@ Mohon bantuannya untuk setup akun kasir BAYARO POS saya. Terima kasih!`;
                 <p className="text-slate-500 text-xs md:text-sm mt-0.5">Tuliskan nama pemilik, nama toko, kategori, nomor WA, dan kota usaha Anda.</p>
               </div>
             </div>
-            
+
             <div className="flex items-start gap-3 bg-white p-4 rounded-2xl border border-slate-100 shadow-sm">
               <span className="p-2 bg-indigo-50 text-indigo-600 rounded-xl font-bold font-display shrink-0">2</span>
               <div>

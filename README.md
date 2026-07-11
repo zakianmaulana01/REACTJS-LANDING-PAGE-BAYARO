@@ -266,9 +266,8 @@ Gambar menu menggunakan URL dari Unsplash. Pastikan koneksi internet aktif saat 
 | | |
 |--|--|
 | **Website** | [bayaropos.com](https://bayaropos.com) |
-| **WhatsApp** | [+62 812-3456-7890](https://wa.me/6281234567890) |
-| **Email** | hello@bayaropos.com |
-| **Alamat** | Ruko Sentra Bisnis Blok B No. 9, Tebet, Jakarta Selatan 12810 |
+| **WhatsApp** | [+62 851-7416-0310](https://wa.me/6285174160310) |
+
 
 ---
 

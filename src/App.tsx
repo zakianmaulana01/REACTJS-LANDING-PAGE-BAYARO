@@ -34,13 +34,13 @@ export default function App() {
 
   return (
     <div id="app-landing-root" className="min-h-screen flex flex-col bg-slate-50 relative selection:bg-indigo-600 selection:text-white antialiased">
-      
+
       {/* Navigation Header */}
       <Header onScrollToSection={scrollToSection} />
 
       {/* Main Sections */}
       <main className="flex-1">
-        
+
         {/* HERO SECTION */}
         <Hero onScrollToSection={scrollToSection} />
 
@@ -74,27 +74,13 @@ export default function App() {
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan-500/5 rounded-full blur-3xl"></div>
 
         <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 border-b border-slate-200 pb-12 mb-10">
-          
+
           {/* Col 1: Brand & Bio */}
           <div className="md:col-span-4 space-y-4">
             <Logo size="sm" />
             <p className="text-xs md:text-sm text-slate-500 leading-relaxed font-normal">
               BAYARO POS adalah solusi sistem manajemen kasir modern dan laporan keuangan real-time yang didedikasikan untuk memberdayakan UMKM Indonesia menuju digitalisasi usaha yang mandiri, cerdas, dan efisien.
             </p>
-            <div className="flex items-center gap-3 pt-2">
-              <a href="#" className="p-2 bg-slate-100 rounded-xl hover:bg-[#4f46e5] hover:text-white transition-all">
-                <Facebook className="h-4 w-4" />
-              </a>
-              <a href="#" className="p-2 bg-slate-100 rounded-xl hover:bg-[#4f46e5] hover:text-white transition-all">
-                <Twitter className="h-4 w-4" />
-              </a>
-              <a href="#" className="p-2 bg-slate-100 rounded-xl hover:bg-[#4f46e5] hover:text-white transition-all">
-                <Instagram className="h-4 w-4" />
-              </a>
-              <a href="#" className="p-2 bg-slate-100 rounded-xl hover:bg-[#4f46e5] hover:text-white transition-all">
-                <Youtube className="h-4 w-4" />
-              </a>
-            </div>
           </div>
 
           {/* Col 2: Navigation Links */}
@@ -138,7 +124,7 @@ export default function App() {
                 </button>
               </li>
               <li>
-                <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="hover:text-[#4f46e5] transition-colors">
+                <a href="https://wa.me/6285174160310" target="_blank" rel="noopener noreferrer" className="hover:text-[#4f46e5] transition-colors">
                   Hubungi Admin WhatsApp
                 </a>
               </li>
@@ -159,17 +145,9 @@ export default function App() {
               Hubungi Kami
             </h4>
             <ul className="space-y-3.5 text-xs text-slate-500">
-              <li className="flex items-start gap-2.5">
-                <MapPin className="h-4.5 w-4.5 text-[#4f46e5] shrink-0" />
-                <span>Ruko Sentra Bisnis Blok B No. 9, Tebet, Jakarta Selatan, DKI Jakarta 12810</span>
-              </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="h-4 w-4 text-[#4f46e5] shrink-0" />
-                <span>+62 812-3456-7890</span>
-              </li>
-              <li className="flex items-center gap-2.5">
-                <Mail className="h-4 w-4 text-[#4f46e5] shrink-0" />
-                <span>hello@bayaropos.com</span>
+                <span>+62 851-7416-0310</span>
               </li>
             </ul>
           </div>

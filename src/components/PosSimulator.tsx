@@ -116,7 +116,7 @@ export default function PosSimulator() {
   const handleItemClick = (item: MenuItem) => {
     // Check if customization is allowed for this item
     const hasOptions = item.optionsAllowed && Object.values(item.optionsAllowed).some(v => v === true);
-    
+
     if (hasOptions) {
       setCustomizingItem(item);
       // Reset customization options
@@ -140,7 +140,7 @@ export default function PosSimulator() {
       syrup: 'None'
     };
     const cartId = `${item.id}-default`;
-    
+
     setCart((prevCart) => {
       const existing = prevCart.find((i) => i.id === cartId);
       if (existing) {
@@ -282,7 +282,7 @@ export default function PosSimulator() {
       if (item.customOptions.sugar) optionsArray.push(item.customOptions.sugar);
       if (item.customOptions.extraShot) optionsArray.push('Extra Shot (+6k)');
       if (item.customOptions.syrup !== 'None') optionsArray.push(`${item.customOptions.syrup} Syrup (+5k)`);
-      
+
       return {
         name: item.menuItem.name,
         quantity: item.quantity,
@@ -364,7 +364,7 @@ export default function PosSimulator() {
   return (
     <section id="demo" className="py-20 bg-slate-100 relative">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        
+
         {/* Header Title */}
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-14 space-y-3">
           <span className="text-xs font-bold text-indigo-600 tracking-widest uppercase bg-indigo-50 px-3 py-1 rounded-full border border-indigo-100">
@@ -380,7 +380,7 @@ export default function PosSimulator() {
 
         {/* Master Tablet Container */}
         <div id="pos-tablet-frame" className="bg-white border-8 border-slate-800 rounded-[32px] shadow-2xl overflow-hidden flex flex-col h-[780px] relative max-w-6xl mx-auto">
-          
+
           {/* Tablet Status Indicator Ticker */}
           <div className="bg-slate-900 text-slate-300 px-6 py-2.5 flex items-center justify-between text-[11px] md:text-xs font-semibold border-b border-white/5 shrink-0 select-none">
             <div className="flex items-center gap-2">
@@ -399,7 +399,7 @@ export default function PosSimulator() {
 
           {/* iPad styled Header Bar */}
           <div className="bg-slate-50 border-b border-slate-200 px-4 md:px-6 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4 shrink-0">
-            
+
             {/* Left: Brand Identity & Tabs Selector */}
             <div className="flex items-center justify-between md:justify-start w-full md:w-auto gap-6">
               <img src="/assets/bayaro-logo-transparent.png" alt="Bayaro" className="h-7" />
@@ -464,7 +464,7 @@ export default function PosSimulator() {
 
           {/* Main Working Space Content */}
           <div className="flex-1 flex overflow-hidden bg-slate-100">
-            
+
             {/* TAB 1: KASIR */}
             {activeTab === 'kasir' && (
               <>
@@ -560,7 +560,7 @@ export default function PosSimulator() {
 
                 {/* Right Area: Checkout Pesanan Panel (Cart Sidebar) */}
                 <div className="w-80 border-l border-slate-200 bg-white flex flex-col h-full shrink-0">
-                  
+
                   {/* Cart Header */}
                   <div className="p-4 border-b border-slate-100 shrink-0">
                     <div className="flex items-center justify-between">
@@ -605,7 +605,7 @@ export default function PosSimulator() {
                             <div className="flex items-start justify-between gap-2">
                               <div>
                                 <h5 className="font-bold text-xs text-slate-800">{item.menuItem.name}</h5>
-                                
+
                                 {/* Options summary */}
                                 {hasCustomOptions && (
                                   <p className="text-[10px] text-slate-400 font-medium leading-normal mt-0.5">
@@ -941,7 +941,7 @@ export default function PosSimulator() {
             {/* TAB 3: LAPORAN ANALITIK REAL-TIME */}
             {activeTab === 'laporan' && (
               <div className="flex-1 p-6 overflow-y-auto space-y-6">
-                
+
                 {/* Header Laporan */}
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-slate-200 pb-3.5">
                   <div>
@@ -992,7 +992,7 @@ export default function PosSimulator() {
 
                 {/* Live Graphics Row (Line / Bar chart representation in custom responsive vector SVGs!) */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                  
+
                   {/* Chart A: Omset timeline */}
                   <div className="bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-4">
                     <h4 className="font-bold text-slate-900 text-xs md:text-sm uppercase tracking-wider border-b border-slate-50 pb-2 flex items-center justify-between">
@@ -1160,7 +1160,7 @@ export default function PosSimulator() {
       {customizingItem && (
         <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-3xl max-w-md w-full shadow-2xl overflow-hidden border border-slate-100 animate-in zoom-in-95 duration-200">
-            
+
             {/* Modal Header */}
             <div className="bg-slate-900 text-white p-5 flex items-center justify-between">
               <div>
@@ -1174,7 +1174,7 @@ export default function PosSimulator() {
 
             {/* Modal Scroll Body content */}
             <div className="p-5 space-y-5 max-h-[380px] overflow-y-auto">
-              
+
               {/* Temperature option */}
               {customizingItem.optionsAllowed?.temperature && (
                 <div className="space-y-2">
@@ -1309,7 +1309,7 @@ export default function PosSimulator() {
       {isCheckoutOpen && (
         <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-3xl max-w-lg w-full shadow-2xl overflow-hidden border border-slate-100 animate-in zoom-in-95 duration-200">
-            
+
             {!showSuccessScreen ? (
               /* ACTIVE CHECKOUT INPUT STATE */
               <>
@@ -1514,7 +1514,7 @@ export default function PosSimulator() {
             ) : (
               /* SUCCESS CHECKOUT receipt presentation state */
               <div className="p-6 text-center space-y-6">
-                
+
                 {/* Visual success splash */}
                 <div className="space-y-2">
                   <div className="inline-flex p-2.5 bg-emerald-50 text-emerald-500 border border-emerald-100 rounded-full animate-bounce">
@@ -1530,12 +1530,12 @@ export default function PosSimulator() {
 
                 {/* Stylized Thermal Receipt (Struk Penjualan) */}
                 <div className="border border-dashed border-slate-300 bg-amber-50/20 rounded-2xl p-5 text-left font-mono text-[10px] md:text-xs text-slate-700 max-w-sm mx-auto shadow-inner relative overflow-hidden">
-                  
+
                   {/* Visual Receipt Header */}
                   <div className="text-center space-y-1 pb-3 border-b border-dashed border-slate-300">
                     <p className="font-bold uppercase tracking-wider text-slate-800">☕ KAFE BAYARO POS</p>
                     <p className="text-[9px] text-slate-400">Ruko Sentra Bisnis Blok B No. 9</p>
-                    <p className="text-[9px] text-slate-400">WhatsApp: 0812-3456-7890</p>
+                    <p className="text-[9px] text-slate-400">WhatsApp: 0851-7416-0310</p>
                   </div>
 
                   {/* Transaction Metadata */}
@@ -1637,7 +1637,7 @@ export default function PosSimulator() {
       {viewingReceipt && (
         <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-3xl max-w-sm w-full shadow-2xl p-6 overflow-hidden border border-slate-100 animate-in zoom-in-95 duration-150 space-y-4">
-            
+
             <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
               <span className="text-xs font-bold text-slate-400">SALINAN STRUK PEMBAYARAN</span>
               <button

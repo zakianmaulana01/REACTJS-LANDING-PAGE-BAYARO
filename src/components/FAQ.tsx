@@ -70,7 +70,7 @@ export default function FAQ() {
   return (
     <section id="faq" className="py-20 md:py-28 bg-slate-50 relative">
       <div className="max-w-4xl mx-auto px-4 md:px-8">
-        
+
         {/* Header FAQs */}
         <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16 space-y-3">
           <span className="text-xs font-bold text-indigo-600 tracking-widest uppercase bg-indigo-50 px-3 py-1 rounded-full border border-indigo-100">
@@ -97,7 +97,7 @@ export default function FAQ() {
             Punya pertanyaan lain yang belum terjawab di sini?
           </p>
           <a
-            href="https://wa.me/6281234567890?text=Halo%20BAYARO%20POS,%20saya%20ingin%20bertanya%20lebih%20lanjut%20mengenai%20langganan%20sistem%20kasir..."
+            href="https://wa.me/6285174160310?text=Halo%20BAYARO%20POS,%20saya%20ingin%20bertanya%20lebih%20lanjut%20mengenai%20langganan%20sistem%20kasir..."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 mt-3 text-sm font-bold text-indigo-600 hover:text-indigo-700 hover:underline"
